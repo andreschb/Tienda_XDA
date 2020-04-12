@@ -1,0 +1,87 @@
+.navbar {
+  padding: initial; }
+  .navbar .nav-item {
+    padding: 15px 20px; }
+    .navbar .nav-item .nav-link {
+      text-decoration: none;
+      color: black;
+      font-weight: bold; }
+  .navbar .navbar-toggler {
+    margin-right: 25px; }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+      .navbar .navbar-toggler {
+        margin-right: 50px; } }
+
+.navbar-brand {
+  color: #ffffff !important;
+  background-color: black;
+  margin: 0;
+  padding: 20px 15px;
+  font-family: "Old Standard TT", serif; }
+
+.container {
+  max-width: 100%;
+  font-family: "Old Standard TT", serif; }
+  .container .mobile {
+    display: none; }
+  .container .parrafo1 {
+    height: 550px;
+    padding: 20px 50px; }
+    .container .parrafo1 .texto_1 {
+      font-weight: bold; }
+    .container .parrafo1 a {
+      padding: 15px 20px 0px 20px;
+      border: 1px solid black;
+      height: 50px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold; }
+  .container .parrafo2 {
+    height: 200px; }
+    .container .parrafo2 .Newsletter {
+      padding: 30px 40px;
+      width: 80%; }
+      .container .parrafo2 .Newsletter .Newsletter_1 {
+        font-size: 24px; }
+      .container .parrafo2 .Newsletter .cuadro-input-correo {
+        padding: 0; }
+        .container .parrafo2 .Newsletter .cuadro-input-correo #staticEmail {
+          border-radius: inherit; }
+    .container .parrafo2 .vertical {
+      width: 20%;
+      margin: auto; }
+      .container .parrafo2 .vertical h5 {
+        margin-top: 30px;
+        transform: rotate(90deg); }
+  .container .imagen {
+    background-image: url("../img/large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px; }
+  .container .Newsletter {
+    background-color: black;
+    color: white; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .container .parrafo1 {
+      height: 300px !important; }
+    .container .mobile {
+      display: block;
+      height: 350px !important;
+      background-size: cover;
+      background-position: 0px -280px !important; }
+    .container .vertical h5 {
+      margin-top: 80px !important;
+      margin-right: 30px !important; } }
+  @media only screen and (max-width: 768px) {
+    .container {
+      padding-left: 0px;
+      padding-right: 0px; }
+      .container .mobile {
+        display: block;
+        height: 200px;
+        background-size: cover;
+        background-position: 0px -70px; }
+      .container .desktop {
+        display: none; }
+      .container .parrafo1 {
+        padding: 20px 30px; } }

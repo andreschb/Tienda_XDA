@@ -1,0 +1,91 @@
+.container{
+    max-width: 100%;
+    font-family: $font-family;
+    .mobile{
+        display: none;
+    }
+    .parrafo1{
+        height: 550px;
+        padding: 20px 50px;
+        .texto_1{
+            font-weight: bold;
+        }
+        a{
+            padding: 15px 20px 0px 20px;
+            border: 1px solid black;
+            height: 50px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+    }
+    .parrafo2{
+        height: 200px;
+        .Newsletter{
+            padding: 30px 40px;
+            width: 80%;
+            .Newsletter_1{
+                font-size: 24px;
+            }
+            .cuadro-input-correo{
+                padding: 0;
+                #staticEmail{
+                    border-radius: inherit;
+                }
+            }
+        }
+        .vertical{
+            width: 20%;
+            margin: auto;
+            h5{
+                margin-top: 30px;
+                transform: rotate(90deg);
+            }
+        }
+    }
+    .imagen{
+        background-image: url('../img/large.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 750px;
+    }
+    .Newsletter{
+        background-color: black;
+        color: white;
+    }
+    @media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px)  {
+        .parrafo1{
+            height: 300px !important;
+        }
+        .mobile{
+            display: block;
+            height: 350px !important;
+            background-size: cover;
+            background-position: 0px -280px !important;
+        }
+        .vertical{
+            h5{
+                margin-top: 80px !important;
+                margin-right: 30px !important;
+            }
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        padding-left: 0px;
+        padding-right: 0px;
+        .mobile{
+            display: block;
+            height: 200px;
+            background-size: cover;
+            background-position: 0px -70px;
+        }
+        .desktop{
+            display: none;
+        }
+        .parrafo1{
+            padding: 20px 30px;
+        }
+    }
+}
